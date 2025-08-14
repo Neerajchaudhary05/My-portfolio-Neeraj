@@ -4,37 +4,43 @@ import { SingleProject } from './SingleProject'
 import {motion} from 'framer-motion';
 import { fadeIn } from '../../framerMotion/varients';
 
+import Project1 from "/My-portfolio-Neeraj/public/images/website-img-1.jpg";
+import Project2 from "/My-portfolio-Neeraj/public/images/website-img-2.webp";
+import Project3 from "/My-portfolio-Neeraj/public/images/website-img-3.jpg";
+import Project4 from "/My-portfolio-Neeraj/public/images/website-img-4.jpg";
+
+
 const projects=[
     {
-        name:'Bank Management System',
-        year:'Dec2024',
+        name:'Estate Website',
+        year:'Aug2025',
         align:'right',
-        image:'../../public/images/website-img-1.jpg',
-        link:"#",
+        image:Project1,
+        link:"https://github.com/Neerajchaudhary05/Estate-Website.git",
 
     },
     {
         name:'To-Do-List',
         year:'Jul2025',
         align:'left',
-        image:'../../public/images/website-img-2.webp',
-        link:"#",
+        image:Project2,
+        link:"https://github.com/Neerajchaudhary05/ToDo-List.git",
 
     },
     {
-        name:'User Management System',
-        year:'Jan2025',
+        name:'Bank Management System',
+        year:'Mar2025',
         align:'right',
-        image:'../../public/images/website-img-3.jpg',
-        link:"#",
+        image:Project3,
+        link:"https://github.com/Neerajchaudhary05/Bank-Management-System.git",
 
     },
     {
         name:'Koun Banega Crorepati',
-        year:'Mar2025',
+        year:'Jan2025',
         align:'left',
-        image:'../../public/images/website-img-4.jpg',
-        link:"#",
+        image:Project4,
+        link:"https://github.com/Neerajchaudhary05/Koun-Banega-Crorepati.git",
 
     }
 ]
@@ -55,7 +61,7 @@ export const Projectmain = () => {
         <div className='flex flex-col gap-20 max-w-[900px] mx-auto mt-12'>
         {
             projects.map((item,index)=>{
-                return <SingleProject key={index} name={item.name} year={item.year}  align={item.align} image={item.image} />
+                return <SingleProject key={index} name={item.name} year={item.year}  align={item.align} image={item.image} link={item.link} />
             })
         }
         </div>
