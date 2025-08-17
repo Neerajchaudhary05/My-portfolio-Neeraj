@@ -1,5 +1,5 @@
 
-import NavbarMain from './Components/navbar/navbarMain';
+import NavbarMain from './Components/navbar/NavbarMain';
 import HeroMain from './Components/HeroSection/HeroMain';
 import HeroGradient from './Components/HeroSection/HeroGradient';
 import { SubHeroSection } from './Components/HeroSection/SubHeroSection';
