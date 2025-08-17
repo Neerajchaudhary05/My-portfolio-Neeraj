@@ -28,7 +28,7 @@ export const HeroText = () => {
         whileInView="show"
         viewport={{once: false,amount:0}}
         
-        className='text-lg mt-4 text-white'> A passionate Full-Stack web developer <br/> with 3 years of Diploma</motion.p>
+        className='text-lg mt-4 text-white mb-2'> A passionate Full-Stack web developer <br/> with 3 years of Diploma</motion.p>
     </div>
   )
 }
